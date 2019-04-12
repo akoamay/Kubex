@@ -1,6 +1,6 @@
 //This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/. 
 //
-//Author: Víctor Arellano Vicente (Ivelate)
+//Author: Vï¿½ctor Arellano Vicente (Ivelate)
 //
 //Depth shader used in shadows. Fetch the texture and checks if its transparent to discard the pixel or not.
 
@@ -19,8 +19,10 @@ void main()
 	{
 		outColor=texture(tiles,
 			vec3(
-				Location.z,
-				1-Location.y,
+				//Location.z,
+				//1-Location.y,
+				0.0,
+				0.0,
 				floor(Properties.x+0.5)
 				));
 	}
@@ -28,18 +30,22 @@ void main()
 	{
 		outColor=texture(tiles,
 			vec3(
-				Location.x,
-				Location.z,
+				//Location.x,
+				//Location.z,
+				0.0,
+				0.0,
 				floor(Properties.x+0.5)
 				));
 	}
 	else{
 		outColor=texture(tiles,
 			vec3(
-				Location.x,
-				1-Location.y,
+				//Location.x,
+				//1-Location.y,
+				0.0,
+				0.0,
 				floor(Properties.x+0.5)
 				));
 	}
-	if(outColor.w<0.5) discard;
+	//if(outColor.w<0.5) discard;
 }

@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+mainClassName = 'App'
+
+dependencies {
+    compile fileTree(dir: './lib/jar', includes: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+}
+
+run{
+    mainClassName = 'App'
+    systemProperty 'java.library.path', file("./lib/natives/windows")
+}
+
+repositories {
+    jcenter()
+}

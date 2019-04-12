@@ -1,6 +1,6 @@
 //This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/. 
 //
-//Author: Víctor Arellano Vicente (Ivelate)
+//Author: Vï¿½ctor Arellano Vicente (Ivelate)
 //
 //Terrain voxel shader. Renders the default color, normal, brightness and depth to textures
 
@@ -51,7 +51,7 @@ vec3 normal;
 				floor(Properties.x+0.5)
 				));
 	}
-	if(outColor.w<0.5) discard;
+	//if(outColor.w<0.5) discard;
 	
 	outcolor=outColor;
 

@@ -36,7 +36,7 @@ import org.lwjgl.util.vector.Vector4f;
 /**
  * This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
  * 
- * @author Víctor Arellano Vicente (Ivelate)
+ * @author Vï¿½ctor Arellano Vicente (Ivelate)
  * 
  * Chunk class. Stores all data contained into a chunk of cubes (32x32x32 cubes), including the cubes per-se, light (Artificial and natural), drawing utilities (FloatBuffers, vbo's), etc.
  * Contans several methods used for drawing, updating and managing chunks.
@@ -2172,7 +2172,6 @@ public class Chunk implements Cleanable
 	 * Recalculates light for the cube x,y,z and its surroudings (Called when a cube is inserted or deleted)
 	 * If the cube inserted was opaque, it will occlude light, and some flood light removing will be performed
 	 * If the cube inserted was transparent, it will let light pass and some flood light adding will be performed
-	 * 
 	 */
 	private void recalculateBrightnessOfCube(int x,int y,int z)
 	{
